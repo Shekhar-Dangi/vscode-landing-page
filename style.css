@@ -131,3 +131,35 @@ nav {
   font-size: 0.75rem;
   font-weight: 500;
 }
+
+.hero-video {
+  width: 70%;
+  margin: auto;
+  background-image: url(images/hero-background.webp);
+  text-align: center;
+  padding: 4rem;
+  border-radius: 10px;
+}
+
+video {
+  width: 95%;
+}
+
+.hero-button-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.hero-video-btn {
+  border: none;
+  background-color: inherit;
+  color: rgb(155, 163, 180);
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: border ease-in 0.3s;
+  padding: 0.4em 1em;
+}
+
+.hero-video-btn:hover {
+  border: 1px solid rgb(155, 163, 180);
+}
