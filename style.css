@@ -81,6 +81,11 @@ nav {
   gap: 1rem;
 }
 
+.navlogo img {
+  width: 22px;
+  cursor: pointer;
+}
+
 .nav li a {
   text-decoration: none;
   color: rgb(155, 163, 180);
@@ -286,14 +291,14 @@ video {
 
 .extensions-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   position: relative;
 }
 
 .extension-card {
   background-color: rgba(255, 255, 255, 0.04);
-  padding: 0.8rem 1rem;
+  padding: 0.5rem 2.15rem;
   border-radius: 10px;
   display: flex;
   gap: 1rem;
@@ -387,4 +392,132 @@ video {
 
 footer {
   padding: 5rem 0;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1206px) {
+  .extensions {
+    width: 95%;
+  }
+
+  .extension-info {
+    display: none;
+  }
+
+  .extensions-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .extension-card {
+    justify-content: center;
+    padding: 0.5rem 0.55rem;
+  }
+}
+@media only screen and (max-width: 1190px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .navlogo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .header {
+    padding: 1.25rem;
+  }
+
+  .nav,
+  .container-right {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-video {
+    width: 95%;
+  }
+
+  .ai-features {
+    width: 95%;
+    margin: 3rem auto;
+  }
+
+  .features {
+    width: 95%;
+  }
+
+  .card {
+    padding: 0;
+  }
+
+  .footer-container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .ai-features {
+    flex-direction: column;
+  }
+  .hero-video {
+    padding: 3rem;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .extensions {
+    flex-direction: column;
+  }
+
+  .extensions-grid {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+    padding: 0 4rem;
+  }
+  .hero-video {
+    padding: 2rem;
+  }
+
+  .download-buttons .btn {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .hero-content h1 {
+    font-size: 2.25rem;
+    padding: 0 2.25rem;
+  }
+  .hero-video {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .hero-content h1 {
+    font-size: 2.25rem;
+    padding: 0 1rem;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+  }
 }
