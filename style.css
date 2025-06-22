@@ -107,6 +107,25 @@ nav {
   justify-content: flex-end;
 }
 
+.search-bar {
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+  color: inherit;
+  padding: 0.5rem 2.25rem;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  cursor: pointer;
+}
+
 /* Hero */
 
 .hero-content {
@@ -378,6 +397,10 @@ video {
   font-size: 0.75rem;
 }
 
+.footer-right img {
+  cursor: pointer;
+}
+
 .social-icons {
   display: flex;
   gap: 1.5rem;
@@ -395,6 +418,19 @@ footer {
 }
 
 /* Media queries */
+
+@media only screen and (max-width: 1464px) {
+  .header {
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  .container-left {
+    align-self: flex-start;
+  }
+  .container-right {
+    align-self: flex-end;
+  }
+}
 
 @media only screen and (max-width: 1206px) {
   .extensions {
@@ -429,6 +465,7 @@ footer {
 @media only screen and (max-width: 990px) {
   .header {
     padding: 1.25rem;
+    flex-direction: row;
   }
 
   .nav,
