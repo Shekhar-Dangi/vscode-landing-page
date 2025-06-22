@@ -90,8 +90,8 @@
       <div class="feature-cards">
         <div class="card">
           <div class="card-info">
-            <h3>Agent Mode</h3>
-            <p>
+            <h3 class="card-title">Agent Mode</h3>
+            <p class="card-subtitle">
               Tackle complex, multi-step tasks. Agent mode reads your codebase,
               suggests edits across files, runs terminal commands, and responds
               to compile or test failures — all in a loop until the job is done.
@@ -106,8 +106,8 @@
         </div>
         <div class="card">
           <div class="card-info">
-            <h3>Next edit suggestions</h3>
-            <p>
+            <h3 class="card-title">Next edit suggestions</h3>
+            <p class="card-subtitle">
               VS Code predicts your next move as you code. Use the Tab key to
               accept AI-powered suggestions right in your editor. It
               intelligently recommends what to change — and where — based on the
@@ -122,6 +122,134 @@
       </div>
     </section>
 
+    <!-- Code with Extensions Section -->
+    <section class="extensions">
+      <div class="extensions-content card-info">
+        <h2 class="card-title">Code with extensions</h2>
+        <p class="card-subtitle">
+          Customize VS Code with AI-powered functionality from extensions and
+          Model Context Protocol servers to use in Chat. Or,
+          <a href="#">build your own extension</a> to power your team’s unique
+          scenarios.
+        </p>
+      </div>
+
+      <div class="extensions-grid">
+        <div class="extensions-cards">
+          <div class="extension-card">
+            <div class="extension-icon">
+              <img src="images/python-icon.svg" alt="Python Icon" />
+            </div>
+            <div class="extension-info">
+              <h3 class="card-title ex-title">Python</h3>
+              <p class="card-subtitle ex-sub">
+                Adds rich language support for Python
+              </p>
+            </div>
+          </div>
+
+          <div class="extension-card">
+            <div class="extension-icon">
+              <img src="images/stripe-icon.svg" alt="Stripe Icon" />
+            </div>
+            <div class="extension-info">
+              <h3 class="card-title ex-title">Stripe</h3>
+              <p class="card-subtitle ex-sub">
+                Build, test, and use Stripe inside your editor
+              </p>
+            </div>
+          </div>
+
+          <div class="extension-card">
+            <div class="extension-icon">
+              <img src="images/cpp-icon.svg" alt="C/C++ Icon" />
+            </div>
+            <div class="extension-info">
+              <h3 class="card-title ex-title">C/C++</h3>
+              <p class="card-subtitle ex-sub">
+                Adds rich language support for C/C++
+              </p>
+            </div>
+          </div>
+
+          <div class="extension-card">
+            <div class="extension-icon">
+              <img src="images/jupyter-icon.svg" alt="Jupyter Icon" />
+            </div>
+            <div class="extension-info">
+              <h3 class="card-title ex-title">Jupyter</h3>
+              <p class="card-subtitle ex-sub">
+                Language support for Jupyter Notebooks
+              </p>
+            </div>
+          </div>
+
+          <div class="extension-card">
+            <div class="extension-icon">
+              <img src="images/gitlens-icon.svg" alt="GitLens Icon" />
+            </div>
+            <div class="extension-info">
+              <h3 class="card-title ex-title">GitLens</h3>
+              <p class="card-subtitle ex-sub">
+                Supercharge your Git experience
+              </p>
+            </div>
+          </div>
+
+          <div class="extension-card">
+            <div class="extension-icon">
+              <img src="images/csharp-icon.svg" alt="C# Dev Kit Icon" />
+            </div>
+            <div class="extension-info">
+              <h3 class="card-title ex-title">C# Dev Kit</h3>
+              <p class="card-subtitle ex-sub">
+                Powerful tools for your C# environment
+              </p>
+            </div>
+          </div>
+
+          <div class="extension-card faded">
+            <div class="extension-icon">
+              <img src="images/mongodb-icon.svg" alt="MongoDB Icon" />
+            </div>
+            <div class="extension-info">
+              <h3 class="card-title ex-title">MongoDB</h3>
+              <p class="card-subtitle ex-sub">
+                Extension for the @MongoDB agent
+              </p>
+            </div>
+          </div>
+
+          <div class="extension-card faded">
+            <div class="extension-icon">
+              <img src="images/copilot-icon.svg" alt="GitHub Copilot Icon" />
+            </div>
+            <div class="extension-info">
+              <h3 class="card-title ex-title">GitHub Copilot for Azure</h3>
+              <p class="card-subtitle ex-sub">
+                Streamline the process of developing for Azure
+              </p>
+            </div>
+          </div>
+
+          <div class="extension-card faded">
+            <div class="extension-icon">
+              <img src="images/remote-icon.svg" alt="Remote Icon" />
+            </div>
+            <div class="extension-info">
+              <h3 class="card-title ex-title">Remote Development</h3>
+              <p class="card-subtitle ex-sub">
+                Open folders in a container on a remote machine
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="marketplace-link">
+          View 60k+ extensions in the <a href="#">Extension Marketplace</a>
+        </p>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta">
       <div class="container">
@@ -132,17 +260,31 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-content">
-        <div class="footer-links">
-          <a href="#">Support</a>
-          <a href="#">Privacy</a>
-          <a href="#">Manage Cookies</a>
-          <a href="#">Terms of Use</a>
+      <div class="footer-container">
+        <!-- Left Side: Social Icons and Links -->
+        <div class="footer-left">
+          <div class="social-icons">
+            <a href="#" aria-label="X (Twitter)">
+              <img src="images/x-icon.svg" alt="X Icon" />
+            </a>
+            <a href="#" aria-label="GitHub">
+              <img src="images/github-icon.svg" alt="GitHub Icon" />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <img src="images/youtube-icon.svg" alt="YouTube Icon" />
+            </a>
+          </div>
+          <div class="footer-links">
+            <a href="#">Support</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">License</a>
+          </div>
         </div>
-        <div class="social-icons">
-          <a href="#" aria-label="Twitter">🐦</a>
-          <a href="#" aria-label="GitHub">🐙</a>
-          <a href="#" aria-label="YouTube">▶️</a>
+
+        <!-- Right Side: Microsoft Logo -->
+        <div class="footer-right">
+          <img src="images/microsoft-icon.svg" alt="Microsoft Logo" />
         </div>
       </div>
     </footer>

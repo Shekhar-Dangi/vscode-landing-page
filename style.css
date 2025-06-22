@@ -4,6 +4,7 @@
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -197,6 +198,7 @@ video {
 
 .aifeature-subtitle {
   color: #9fb1d1;
+  line-height: 1.75rem;
 }
 
 .aifeature-image {
@@ -245,13 +247,103 @@ video {
   border-radius: 6px;
 }
 
-.card-info h3 {
+.card-title {
   color: rgb(195, 208, 229);
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 500;
 }
 
-.card-info p {
+.card-subtitle {
   color: (159, 177, 209);
   font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+/* Extensions */
+
+.extensions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: auto;
+  gap: 4rem;
+}
+
+.extension-card img {
+  width: 50px;
+}
+
+.extensions-content {
+  flex: 1;
+}
+
+.extensions-grid {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.extensions-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  position: relative;
+}
+
+.extension-card {
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+}
+
+.extension-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.ex-sub {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.ex-title {
+  font-size: 1rem;
+}
+
+.extension-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.extensions-cards::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  pointer-events: none;
+}
+
+.extensions-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.extensions-grid p {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgb(155, 163, 180);
 }
