@@ -347,3 +347,44 @@ video {
   font-size: 0.8rem;
   color: rgb(155, 163, 180);
 }
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+}
+
+.footer img {
+  width: 25px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(155, 163, 180);
+  font-size: 0.75rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+footer {
+  padding: 5rem 0;
+}
